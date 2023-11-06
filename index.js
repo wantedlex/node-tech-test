@@ -4,10 +4,7 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-// Controllers
-const artistsCTRL = require('./controllers/tracks.controller.js');
-
-app.use('/tracks', artistsCTRL);
+app.use(express.static('public'));
 
 // Server init
 app.listen(port, () => {

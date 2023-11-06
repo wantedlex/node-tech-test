@@ -2,19 +2,7 @@
 const path = require('path');
 const sqlite = require('sqlite3').verbose();
 
-
-/**
- * Allows you to retrieve a list of tracks
- * @param {object} options 
- * @returns {Promise<any>}
- */
-const list = (options = {}) => {
-  return Promise.resolve([]);
-}
-module.exports.list = list;
-
 /** 
-* @private
 * Allows you to connect at DB
 * @returns {Promise<sqlite.Database>}
 */

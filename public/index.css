@@ -1,0 +1,30 @@
+@font-face {
+    font-family: vodafont;
+      src: url("assets/vodafone-regular.woff");
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: vodafont;
+}
+
+body { display: flex;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container > .title {
+    color: #E60000;
+    font-size: 30pt;
+}
+
+.container > .candidate {
+    color: rgb(51, 51, 51);
+    font-size: 20pt;
+}
